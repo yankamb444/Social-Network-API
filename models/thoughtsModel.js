@@ -6,7 +6,7 @@ const reactionSchema = require('./reactionSchema')
 
 const formatGetter = require('../utils/formatData.js')
 
-// Schema to create a course model
+// Schema to create a thought model
 const thoughtSchema = new Schema({
     thoughtText: {
         type: String,

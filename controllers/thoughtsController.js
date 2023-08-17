@@ -1,7 +1,7 @@
 const { Thoughts, User } = require('../models');
 
 module.exports = {
-  // Get all courses
+  // Get all thoughts
   async getThoughts(req, res) {
     try {
       const thoughts = await Thoughts.find();
@@ -73,12 +73,12 @@ module.exports = {
     try {
         const thought = await Thoughts.findOneAndUpdate(
           { _id: req.params.thoughtId },
-          { $addToSet: {reactions: req.params.reactionId} },
+          { $addToSet: {reactions: req.body} },
           { runValidators: true, new: true }
         );
   
         if (!thought) {
-          res.status(404).json({ message: 'No course with this id!' });
+          res.status(404).json({ message: 'No friend found' });
         }
   
         res.json(thought);
@@ -87,17 +87,6 @@ module.exports = {
       }
   },
 
-//   sync createThought(req, res) {
-//     try {
-//       const thought = await Thoughts.create(req.body);
-//       if (thought){
-//         await User.findOneAndUpdate({_id: req.body.userId }, {$addToSet: {thoughts: thought._id }}, {new: true})
-//     }
-//       res.json(thought);
-//     } catch (err) {
-//       console.log(err);
-//       return res.status(500).json(err);
-//     }
 
   async deleteReaction(req, res) {
     try {
@@ -108,7 +97,7 @@ module.exports = {
         );
   
         if (!thought) {
-          res.status(404).json({ message: 'No course with this id!' });
+          res.status(404).json({ message: 'No reaction with this id!' });
         }
   
         res.json(thought);

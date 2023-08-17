@@ -108,7 +108,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Remove assignment from a student
+  // Remove friend
   async deleteFriend(req, res) {
     try {
       const user = await User.findOneAndUpdate(
