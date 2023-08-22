@@ -1,3 +1,4 @@
+// Reference mini project under 18-NoSQL in class repo
 const connection = require('../config/connection');
 const {
     User,
