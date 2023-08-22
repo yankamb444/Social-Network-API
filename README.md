@@ -1,7 +1,7 @@
 # Social-Network-API
 
 # Description 
-The goal of the challenge is to create a simple svg logo based on user inputs. 
+The goal of the challenge is to create a a social network web application. You will be able to add users, friends, and thoughts.
 
 # Acceptance Criteria 
  1. GIVEN a social network API
@@ -15,7 +15,8 @@ The goal of the challenge is to create a simple svg logo based on user inputs.
  9. THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 
 # Technologies Used/Needed 
- 1. Inquirer: https://www.npmjs.com/package/inquirer/v/8.2.4
+ 1. Express: https://www.npmjs.com/package/express
+ 2. Mongoose: https://www.npmjs.com/package/mongoose 
 
 # Video Walkthrough 
 
