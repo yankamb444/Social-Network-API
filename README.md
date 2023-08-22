@@ -19,6 +19,10 @@ The goal of the challenge is to create a simple svg logo based on user inputs.
 
 # Video Walkthrough 
 
+
+https://github.com/yankamb444/Social-Network-API/assets/127771643/70201381-da87-477f-8a2b-35d641b50780
+
+
 # Resources Used
 This challenge was created with the help of a tutor, class examples (class repo: 18-NoSQL mini project), and the resource(s) below.  
 
