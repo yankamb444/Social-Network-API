@@ -49,7 +49,7 @@ module.exports = {
             return res.status(500).json(err);
         }
     },
-    // Delete a course
+    // Delete a thought
     async deleteThought(req, res) {
         try {
             const thought = await Thoughts.findOneAndDelete({

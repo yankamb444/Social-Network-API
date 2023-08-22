@@ -26,7 +26,6 @@ const userSchema = new Schema({
 
   friends: [{
     type: Schema.Types.ObjectId,
-    // Sets a default value of 12 weeks from now
     ref: 'userModel'
   }],
 

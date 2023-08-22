@@ -17,7 +17,7 @@ connection.once('open', async () => {
 
     const userseeds = [{
             username: 'userOne',
-            email: 'emailOne'
+            email: 'emailOne',
         },
         {
             username: 'userTwo',
@@ -25,7 +25,7 @@ connection.once('open', async () => {
         }
     ]
 
-    // Add students to the collection and await the results
+    // Add users to the collection and await the results
     await User.collection.insertMany(userseeds);
 
 
